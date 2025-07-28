@@ -1,6 +1,7 @@
 import { MapPin, Mail, Heart, Award, Users, Car } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
+import SEO from "../components/SEO";
 
 const About = () => {
   const stats = [
@@ -31,6 +32,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO 
+        title="About Osagyefo Car Rentals | Trusted Car Rental Service in Accra, Ghana"
+        description="Learn about Osagyefo Car Rentals - your trusted partner for reliable, affordable transportation in Accra. 5+ years experience, 500+ happy customers, and 100% satisfaction rate."
+        keywords="about Osagyefo car rentals, car rental company Accra, Ghana car rental history, North Kaneshie car rental, trusted car rental Ghana"
+        url="/about"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-background">
         <div className="container mx-auto px-4">

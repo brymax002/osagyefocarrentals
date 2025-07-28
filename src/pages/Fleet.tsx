@@ -1,6 +1,7 @@
 import { MessageCircle } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
+import SEO from "../components/SEO";
 
 const Fleet = () => {
   const vehicles = [
@@ -80,6 +81,12 @@ const Fleet = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO 
+        title="Our Fleet - Premium Vehicles | Osagyefo Car Rentals Ghana"
+        description="Explore our diverse fleet of premium vehicles: Toyota Land Cruiser, Mercedes CLA, Honda CR-V, luxury buses and more. Quality cars for every occasion in Accra, Ghana."
+        keywords="car rental fleet Ghana, Toyota rental Accra, Mercedes rental Ghana, SUV rental Accra, luxury car rental Ghana, bus rental Ghana, vehicle types Accra"
+        url="/fleet"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-background">
         <div className="container mx-auto px-4">

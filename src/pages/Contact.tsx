@@ -2,6 +2,7 @@ import { useState } from "react";
 import { MapPin, Phone, Mail, MessageCircle, Send } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
+import SEO from "../components/SEO";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -41,6 +42,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen pt-16">
+      <SEO 
+        title="Contact Osagyefo Car Rentals | Book Your Vehicle in Accra, Ghana"
+        description="Contact Osagyefo Car Rentals for vehicle bookings. WhatsApp: +233 24 572 0474, Email: addoemma246@gmail.com. Located in North Kaneshie, Accra. 24/7 support available."
+        keywords="contact car rental Accra, book car rental Ghana, North Kaneshie car rental contact, WhatsApp car booking Ghana, Accra car rental phone number"
+        url="/contact"
+      />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-accent to-background">
         <div className="container mx-auto px-4">

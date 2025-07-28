@@ -2,6 +2,7 @@ import { ArrowRight, Star, Quote, Shield, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
+import SEO from "../components/SEO";
 import heroBanner from "../assets/hero-banner.jpg";
 
 const Home = () => {
@@ -30,6 +31,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title="Osagyefo Car Rentals - Explore Accra & Beyond | Quality Car Rental Ghana"
+        description="Trusted car rental agency in North Kaneshie, Accra. Quality vehicles at affordable prices. 24/7 service, flexible options, and professional support. Book now on WhatsApp!"
+        keywords="car rental Accra, Ghana car rental, North Kaneshie car rental, affordable car rental, vehicle rental Ghana, airport transfer Ghana, business travel Ghana"
+        url="/"
+      />
       {/* Hero Section */}
       <section 
         className="relative h-screen flex items-center justify-center overflow-hidden"
