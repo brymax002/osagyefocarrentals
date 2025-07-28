@@ -121,7 +121,7 @@ const Home = () => {
           {/* Featured Vehicles */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <ScrollAnimation animation="fade-in" delay={200}>
-              <div className="card-fleet">
+              <div className="bg-card rounded-2xl overflow-hidden shadow-[0_4px_16px_hsl(237_85%_31%_/_0.15)] hover:shadow-[0_8px_32px_hsl(237_85%_31%_/_0.2)] transform hover:scale-105 transition-all duration-500">
                 <div className="relative overflow-hidden h-48">
                   <img 
                     src="/lovable-uploads/5d9f71e6-d446-4b6d-b6e6-4ae458f39203.png" 
@@ -150,7 +150,7 @@ const Home = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animation="fade-in" delay={400}>
-              <div className="card-fleet">
+              <div className="bg-card rounded-2xl overflow-hidden shadow-[0_4px_16px_hsl(237_85%_31%_/_0.15)] hover:shadow-[0_8px_32px_hsl(237_85%_31%_/_0.2)] transform hover:scale-105 transition-all duration-500">
                 <div className="relative overflow-hidden h-48">
                   <img 
                     src="/lovable-uploads/e894ce23-fca4-442a-84c8-7dd1c517fabf.png" 
@@ -179,7 +179,7 @@ const Home = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animation="fade-in" delay={600}>
-              <div className="card-fleet">
+              <div className="bg-card rounded-2xl overflow-hidden shadow-[0_4px_16px_hsl(237_85%_31%_/_0.15)] hover:shadow-[0_8px_32px_hsl(237_85%_31%_/_0.2)] transform hover:scale-105 transition-all duration-500">
                 <div className="relative overflow-hidden h-48">
                   <img 
                     src="/lovable-uploads/b985a8b8-2e75-4984-8e1e-39d300088939.png" 

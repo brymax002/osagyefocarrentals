@@ -107,7 +107,7 @@ const Fleet = () => {
                 animation="fade-in" 
                 delay={index * 200}
               >
-                <div className="card-fleet">
+                <div className="bg-card rounded-2xl overflow-hidden shadow-[0_4px_16px_hsl(237_85%_31%_/_0.15)] hover:shadow-[0_8px_32px_hsl(237_85%_31%_/_0.2)] transform hover:scale-105 transition-all duration-500">
                   {/* Image */}
                   <div className="relative overflow-hidden h-64">
                     <img 
