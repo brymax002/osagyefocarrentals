@@ -1,44 +1,80 @@
 import { MessageCircle } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
-import carSedan from "../assets/car-sedan.jpg";
-import carSuv from "../assets/car-suv.jpg";
-import carCompact from "../assets/car-compact.jpg";
-import carPickup from "../assets/car-pickup.jpg";
 
 const Fleet = () => {
   const vehicles = [
     {
       id: 1,
-      name: "Premium Sedan",
-      type: "Luxury",
-      image: carSedan,
-      features: ["4 Passengers", "Air Conditioning", "GPS Navigation", "Bluetooth"],
-      description: "Perfect for business trips and comfortable city travel"
+      name: "Luxury Bus",
+      type: "Group Transport",
+      image: "/lovable-uploads/b985a8b8-2e75-4984-8e1e-39d300088939.png",
+      features: ["30+ Passengers", "Air Conditioning", "Long Distance", "Group Events"],
+      description: "Perfect for group tours, events, and long-distance travel"
     },
     {
       id: 2,
-      name: "Family SUV",
-      type: "Spacious",
-      image: carSuv,
-      features: ["7 Passengers", "Large Cargo", "All-Weather", "Safety Features"],
-      description: "Ideal for family trips and group adventures"
+      name: "Toyota Land Cruiser",
+      type: "Premium SUV",
+      image: "/lovable-uploads/5d9f71e6-d446-4b6d-b6e6-4ae458f39203.png",
+      features: ["7 Passengers", "4WD Capability", "Premium Interior", "Off-Road Ready"],
+      description: "Ultimate luxury SUV for VIP travel and adventure"
     },
     {
       id: 3,
-      name: "Compact Car",
-      type: "Economy",
-      image: carCompact,
-      features: ["4 Passengers", "Fuel Efficient", "Easy Parking", "City-Friendly"],
-      description: "Great for city exploration and short trips"
+      name: "Mercedes CLA",
+      type: "Luxury Sedan",
+      image: "/lovable-uploads/e894ce23-fca4-442a-84c8-7dd1c517fabf.png",
+      features: ["4 Passengers", "Premium Comfort", "Business Class", "City Driving"],
+      description: "Elegant sedan for business meetings and special occasions"
     },
     {
       id: 4,
-      name: "Pickup Truck",
-      type: "Utility",
-      image: carPickup,
-      features: ["5 Passengers", "Large Bed", "Towing Capacity", "Off-Road Ready"],
-      description: "Perfect for heavy-duty tasks and cargo transport"
+      name: "Toyota Sedan",
+      type: "Executive",
+      image: "/lovable-uploads/2cc744ad-b192-413c-93c8-cb63a6eee860.png",
+      features: ["5 Passengers", "Fuel Efficient", "Reliable", "Professional"],
+      description: "Professional transportation for business and daily use"
+    },
+    {
+      id: 5,
+      name: "Honda CR-V",
+      type: "Compact SUV",
+      image: "/lovable-uploads/eabf2ecc-29b3-4b63-b19c-1fb095f5add4.png",
+      features: ["5 Passengers", "Cargo Space", "All-Weather", "City & Highway"],
+      description: "Versatile SUV perfect for families and city adventures"
+    },
+    {
+      id: 6,
+      name: "Toyota Highlander",
+      type: "Family SUV",
+      image: "/lovable-uploads/543365ac-1ca0-4939-9c56-979b20de107e.png",
+      features: ["8 Passengers", "Large Interior", "Safety Features", "Family-Friendly"],
+      description: "Spacious family vehicle for comfortable group travel"
+    },
+    {
+      id: 7,
+      name: "Mitsubishi Outlander",
+      type: "Adventure SUV",
+      image: "/lovable-uploads/7cccefb7-b8b4-47be-9be2-e933c258bbe7.png",
+      features: ["7 Passengers", "All-Terrain", "Modern Tech", "Efficient"],
+      description: "Modern SUV with advanced features and capability"
+    },
+    {
+      id: 8,
+      name: "Toyota Camry",
+      type: "Premium Sedan",
+      image: "/lovable-uploads/f0cefc26-8cb2-4884-a517-de53d94c1fac.png",
+      features: ["5 Passengers", "Smooth Ride", "Reliability", "Comfort"],
+      description: "Reliable and comfortable sedan for all occasions"
+    },
+    {
+      id: 9,
+      name: "Toyota Land Cruiser VX",
+      type: "Luxury Off-Road",
+      image: "/lovable-uploads/5946f44d-7bab-4706-876b-6fa6f9f8df5e.png",
+      features: ["8 Passengers", "Premium 4WD", "Luxury Interior", "Ultimate Power"],
+      description: "Top-tier luxury SUV for the most demanding journeys"
     }
   ];
 
@@ -64,20 +100,20 @@ const Fleet = () => {
       {/* Fleet Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vehicles.map((vehicle, index) => (
               <ScrollAnimation 
                 key={vehicle.id} 
                 animation="fade-in" 
                 delay={index * 200}
               >
-                <div className="card-fleet group">
+                <div className="card-fleet">
                   {/* Image */}
                   <div className="relative overflow-hidden h-64">
                     <img 
                       src={vehicle.image} 
                       alt={vehicle.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">

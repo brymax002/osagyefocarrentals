@@ -113,12 +113,102 @@ const Home = () => {
                 Our Premium Fleet
               </h2>
               <p className="text-premium mt-4">
-                From compact cars to spacious SUVs, we have the perfect vehicle for every journey.
+                From luxury sedans to spacious SUVs, we have the perfect vehicle for every journey.
               </p>
             </div>
           </ScrollAnimation>
           
-          <ScrollAnimation animation="fade-in" delay={300}>
+          {/* Featured Vehicles */}
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <ScrollAnimation animation="fade-in" delay={200}>
+              <div className="card-fleet">
+                <div className="relative overflow-hidden h-48">
+                  <img 
+                    src="/lovable-uploads/5d9f71e6-d446-4b6d-b6e6-4ae458f39203.png" 
+                    alt="Toyota Land Cruiser"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      Premium SUV
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold mb-2">Toyota Land Cruiser</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Ultimate luxury SUV for VIP travel</p>
+                  <a
+                    href="https://wa.me/233245720474"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-whatsapp w-full text-center text-sm"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation animation="fade-in" delay={400}>
+              <div className="card-fleet">
+                <div className="relative overflow-hidden h-48">
+                  <img 
+                    src="/lovable-uploads/e894ce23-fca4-442a-84c8-7dd1c517fabf.png" 
+                    alt="Mercedes CLA"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      Luxury Sedan
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold mb-2">Mercedes CLA</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Elegant sedan for business occasions</p>
+                  <a
+                    href="https://wa.me/233245720474"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-whatsapp w-full text-center text-sm"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation animation="fade-in" delay={600}>
+              <div className="card-fleet">
+                <div className="relative overflow-hidden h-48">
+                  <img 
+                    src="/lovable-uploads/b985a8b8-2e75-4984-8e1e-39d300088939.png" 
+                    alt="Luxury Bus"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                      Group Transport
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <h3 className="text-xl font-bold mb-2">Luxury Bus</h3>
+                  <p className="text-muted-foreground text-sm mb-3">Perfect for group tours and events</p>
+                  <a
+                    href="https://wa.me/233245720474"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-whatsapp w-full text-center text-sm"
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+          
+          <ScrollAnimation animation="fade-in" delay={800}>
             <div className="text-center">
               <Link 
                 to="/fleet" 

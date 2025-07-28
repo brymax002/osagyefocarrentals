@@ -148,7 +148,7 @@
   }
   
   .card-fleet {
-    @apply bg-card rounded-2xl overflow-hidden shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-strong)] transform hover:scale-105 transition-all duration-500 group;
+    @apply bg-card rounded-2xl overflow-hidden shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-strong)] transform hover:scale-105 transition-all duration-500;
   }
 
   /* Animation Classes */
