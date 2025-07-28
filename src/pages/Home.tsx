@@ -1,4 +1,4 @@
-import { ArrowRight, Star, Shield, Clock, Users } from "lucide-react";
+import { ArrowRight, Star, Quote, Shield, Clock, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import ScrollAnimation from "../components/ScrollAnimation";
 import WhatsAppButton from "../components/WhatsAppButton";
@@ -217,6 +217,154 @@ const Home = () => {
                 Explore All Vehicles
                 <ArrowRight size={20} />
               </Link>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </section>
+
+      {/* Customer Reviews Section */}
+      <section className="py-20 bg-accent/20">
+        <div className="container mx-auto px-4">
+          <ScrollAnimation animation="fade-in">
+            <div className="text-center mb-16">
+              <h2 className="heading-section text-gradient">
+                What Our Customers Say
+              </h2>
+              <p className="text-premium mt-4">
+                Trusted by hundreds of satisfied customers across Ghana and beyond.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Review 1 */}
+            <ScrollAnimation animation="fade-in" delay={200}>
+              <div className="card-premium p-6 relative">
+                <Quote className="w-8 h-8 text-secondary absolute top-4 right-4 opacity-50" />
+                
+                {/* Star Rating */}
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
+                  ))}
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                  "Excellent service! I needed a car for airport pickup and Osagyefo delivered exactly as promised. 
+                  The driver was professional, the vehicle was clean, and the price was very reasonable. 
+                  Will definitely use them again for my business trips to Accra."
+                </p>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center">
+                    <span className="text-primary-foreground font-semibold text-sm">KA</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Kwame Asante</h4>
+                    <p className="text-sm text-muted-foreground">Business Executive</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            {/* Review 2 */}
+            <ScrollAnimation animation="fade-in" delay={400}>
+              <div className="card-premium p-6 relative">
+                <Quote className="w-8 h-8 text-secondary absolute top-4 right-4 opacity-50" />
+                
+                {/* Star Rating */}
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
+                  ))}
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                  "Outstanding family trip experience! We rented a Toyota Highlander for our family vacation 
+                  and it was perfect. Spacious, comfortable, and well-maintained. The team was very helpful 
+                  with recommendations for places to visit. Highly recommended!"
+                </p>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center">
+                    <span className="text-primary-foreground font-semibold text-sm">AM</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Akosua Mensah</h4>
+                    <p className="text-sm text-muted-foreground">Family Traveler</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            {/* Review 3 */}
+            <ScrollAnimation animation="fade-in" delay={600}>
+              <div className="card-premium p-6 relative">
+                <Quote className="w-8 h-8 text-secondary absolute top-4 right-4 opacity-50" />
+                
+                {/* Star Rating */}
+                <div className="flex items-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
+                  ))}
+                </div>
+
+                <p className="text-muted-foreground leading-relaxed mb-6 italic">
+                  "Reliable and trustworthy service! I've used Osagyefo Car Rentals multiple times for 
+                  both business and personal trips. Their WhatsApp booking system is so convenient, 
+                  and they're always available when I need them. Great value for money!"
+                </p>
+
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center">
+                    <span className="text-primary-foreground font-semibold text-sm">JO</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">John Osei</h4>
+                    <p className="text-sm text-muted-foreground">Regular Customer</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollAnimation>
+          </div>
+
+          {/* Review Stats */}
+          <ScrollAnimation animation="fade-in" delay={800}>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <p className="text-muted-foreground text-sm">Happy Customers</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">4.9</div>
+                <div className="flex items-center justify-center gap-1 mb-2">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-3 h-3 fill-secondary text-secondary" />
+                  ))}
+                </div>
+                <p className="text-muted-foreground text-sm">Average Rating</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                <p className="text-muted-foreground text-sm">Customer Satisfaction</p>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+                <p className="text-muted-foreground text-sm">Support Available</p>
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          {/* Call to Action */}
+          <ScrollAnimation animation="fade-in" delay={1000}>
+            <div className="text-center mt-12">
+              <p className="text-muted-foreground mb-6">
+                Join hundreds of satisfied customers who trust Osagyefo Car Rentals
+              </p>
+              <WhatsAppButton 
+                text="Book Your Vehicle Today" 
+                variant="large"
+              />
             </div>
           </ScrollAnimation>
         </div>
